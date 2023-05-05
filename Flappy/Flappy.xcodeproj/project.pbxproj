@@ -1,0 +1,340 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D9077F6829D82B7100F306B3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = D9077F6729D82B7100F306B3 /* main.c */; };
+		D9077F7029D82BA700F306B3 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9077F6F29D82BA700F306B3 /* OpenGL.framework */; };
+		D9077F7229D82BAD00F306B3 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9077F7129D82BAD00F306B3 /* GLUT.framework */; };
+		D985B3362A04D95F002C1698 /* libglut.3.12.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D9077F7329D82BC400F306B3 /* libglut.3.12.0.dylib */; };
+		D985B3592A04DD94002C1698 /* libglut.3.12.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = D9077F7329D82BC400F306B3 /* libglut.3.12.0.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D9077F6229D82B7100F306B3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		D985B35A2A04DD94002C1698 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D985B3592A04DD94002C1698 /* libglut.3.12.0.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D9077F6429D82B7100F306B3 /* Flappy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Flappy; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9077F6729D82B7100F306B3 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		D9077F6F29D82BA700F306B3 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		D9077F7129D82BAD00F306B3 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		D9077F7329D82BC400F306B3 /* libglut.3.12.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglut.3.12.0.dylib; path = ../../../../../opt/homebrew/Cellar/freeglut/3.4.0/lib/libglut.3.12.0.dylib; sourceTree = "<group>"; };
+		D985B3322A04D36F002C1698 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../opt/homebrew/Cellar/glfw/3.3.8/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
+		D9C6E43E2A03C45200850CE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Base; path = Base.lproj/die.wav; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9077F6129D82B7100F306B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D985B3362A04D95F002C1698 /* libglut.3.12.0.dylib in Frameworks */,
+				D9077F7229D82BAD00F306B3 /* GLUT.framework in Frameworks */,
+				D9077F7029D82BA700F306B3 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D9077F5B29D82B7100F306B3 = {
+			isa = PBXGroup;
+			children = (
+				D9077F6629D82B7100F306B3 /* Flappy */,
+				D9077F6529D82B7100F306B3 /* Products */,
+				D9077F6E29D82BA700F306B3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D9077F6529D82B7100F306B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9077F6429D82B7100F306B3 /* Flappy */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9077F6629D82B7100F306B3 /* Flappy */ = {
+			isa = PBXGroup;
+			children = (
+				D9C6E43D2A03C44B00850CE1 /* die.wav */,
+				D9077F6729D82B7100F306B3 /* main.c */,
+			);
+			path = Flappy;
+			sourceTree = "<group>";
+		};
+		D9077F6E29D82BA700F306B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D985B3322A04D36F002C1698 /* libglfw.3.3.dylib */,
+				D9077F7329D82BC400F306B3 /* libglut.3.12.0.dylib */,
+				D9077F7129D82BAD00F306B3 /* GLUT.framework */,
+				D9077F6F29D82BA700F306B3 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9077F6329D82B7100F306B3 /* Flappy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9077F6B29D82B7100F306B3 /* Build configuration list for PBXNativeTarget "Flappy" */;
+			buildPhases = (
+				D9077F6029D82B7100F306B3 /* Sources */,
+				D9077F6129D82B7100F306B3 /* Frameworks */,
+				D9077F6229D82B7100F306B3 /* CopyFiles */,
+				D985B35A2A04DD94002C1698 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Flappy;
+			productName = Flappy;
+			productReference = D9077F6429D82B7100F306B3 /* Flappy */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9077F5C29D82B7100F306B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					D9077F6329D82B7100F306B3 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = D9077F5F29D82B7100F306B3 /* Build configuration list for PBXProject "Flappy" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D9077F5B29D82B7100F306B3;
+			productRefGroup = D9077F6529D82B7100F306B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9077F6329D82B7100F306B3 /* Flappy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9077F6029D82B7100F306B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9077F6829D82B7100F306B3 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D9C6E43D2A03C44B00850CE1 /* die.wav */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9C6E43E2A03C45200850CE1 /* Base */,
+			);
+			name = die.wav;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D9077F6929D82B7100F306B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D9077F6A29D82B7100F306B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D9077F6C29D82B7100F306B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/freeglut/3.4.0/lib,
+					"/opt/anaconda3/pkgs/libsndfile-1.0.28-hfc679d8_0/lib",
+					/opt/anaconda3/lib,
+					/opt/homebrew/Cellar/glfw/3.3.8/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D9077F6D29D82B7100F306B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/freeglut/3.4.0/lib,
+					"/opt/anaconda3/pkgs/libsndfile-1.0.28-hfc679d8_0/lib",
+					/opt/anaconda3/lib,
+					/opt/homebrew/Cellar/glfw/3.3.8/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9077F5F29D82B7100F306B3 /* Build configuration list for PBXProject "Flappy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9077F6929D82B7100F306B3 /* Debug */,
+				D9077F6A29D82B7100F306B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9077F6B29D82B7100F306B3 /* Build configuration list for PBXNativeTarget "Flappy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9077F6C29D82B7100F306B3 /* Debug */,
+				D9077F6D29D82B7100F306B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D9077F5C29D82B7100F306B3 /* Project object */;
+}
